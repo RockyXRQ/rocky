@@ -1,0 +1,9 @@
+{% extends "base.html.j2" %}
+{% from "item.html.j2" import BIO, MOMENTS, GALLERY %}
+{% block body %}
+    {% if bio is defined and bio %}{{ BIO(bio.paragraphs, bio.contacts) }}{% endif %}
+    {% if moments is defined and moments %}{{ MOMENTS(moments) }}{% endif %}
+    {% if galleries is defined and galleries %}
+        {% for gallery in galleries %}{{ GALLERY(gallery.name, gallery.items) }}{% endfor %}
+    {% endif %}
+{% endblock body %}

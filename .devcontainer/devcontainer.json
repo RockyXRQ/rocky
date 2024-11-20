@@ -1,0 +1,29 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+    "name": "rocky",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "rocky",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "streetsidesoftware.code-spell-checker",
+                "ms-azuretools.vscode-docker",
+                "ms-python.python",
+                "oderwat.indent-rainbow",
+                "charliermarsh.ruff",
+                "Gruntfuggly.todo-tree",
+                "2gua.rainbow-brackets",
+                "ritwickdey.LiveServer",
+                "wholroyd.jinja",
+                "monosans.djlint",
+                "WyattFerguson.jinja2-snippet-kit"
+            ],
+            "[python]": {
+                "editor.formatOnSave": true,
+                "editor.defaultFormatter": "charliermarsh.ruff"
+            }
+        }
+    }
+}

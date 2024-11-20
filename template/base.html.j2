@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ head.title }}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="author" content="{{ head.author }}" />
+        <meta name="description" content="{{ head.description }}" />
+        <meta name="keywords" content="{{ head.keywords }}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap">
+    </head>
+    <body>
+        <button class="theme-toggle" id="themeToggle">🌓</button>
+        {% block body %}
+        {% endblock body %}
+        <script>
+            const themeToggle = document.getElementById('themeToggle');
+            const root = document.documentElement;
+            
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                root.setAttribute('data-theme', savedTheme);
+                themeToggle.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+            } else {
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+                themeToggle.textContent = prefersDark ? '🌙' : '☀️';
+            }
+            
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = root.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                
+                root.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                themeToggle.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+            });
+        </script>
+    </body>
+</html>

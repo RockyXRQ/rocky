@@ -1,0 +1,100 @@
+{% macro BIO(paragraphs, contacts) %}
+    <table class="bio">
+        <tbody>
+            <tr>
+                <td class="bio-image">
+                    <img class="bio-image"
+                         alt="bio"
+                         src="assets/me.jpg"
+                         width="100%"
+                         height="100%" />
+                </td>
+                <td class="bio-text">
+                    <p class="bio-name">
+                        <span class="waving-hand">👋🏻</span> Hello, and welcome!
+                    </p>
+                    {% for paragraph in paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="bio">
+        <tbody>
+            <tr>
+                <td class="bio-contacts">
+                    {% for contact in contacts %}
+                        {{ contact }}
+                        {% if not loop.last %}&nbsp;/&nbsp;{% endif %}
+                    {% endfor %}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+{% endmacro %}
+{% macro MOMENTS(moments) %}
+    <table class="section-title">
+        <tbody>
+            <tr>
+                <td class="section-title">🎉 Moments</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="section-content">
+        <tbody>
+            {% for moment in moments %}
+                <tr>
+                    <td class="moments-moment">[{{ moment.date }}]&emsp;{{ moment.description }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td class="moments-moment-ellipsis">···</td>
+            </tr>
+        </tbody>
+    </table>
+{% endmacro %}
+{% macro GALLERY(name, items) %}
+    <table class="section-title">
+        <tbody>
+            <tr>
+                <td class="section-title">{{ name }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="section-content">
+        <tbody>
+            {% for item in items %}
+                <tr class="gallery-item">
+                    <td class="gallery-item-image">
+                        <div>
+                            <img src={{ item.image }} width="100%" height="100%" alt="{{ item.name }}" />
+                        </div>
+                    </td>
+                    <td class="gallery-item-text">
+                        <a class="gallery-item-text-name">{{ item.name }}</a>
+                        <br />
+                        {% if item.tags is defined and item.tags %}
+                            {% for tag in item.tags %}
+                                <img src=" https://img.shields.io/badge/-{{ tag.name }}-{{ tag.color }}"
+                                     alt="{{ tag.name }}" />
+                            {% endfor %}
+                        {% endif %}
+                        <br />
+                        {% for link in item.links %}
+                            {{ link }}
+                            <br />
+                        {% endfor %}
+                        {{ item.description }}
+                        <p class="bullet-list">
+                            {% for bullet in item.bullets %}
+                                <div class="bullet-item">
+                                    <span class="bullet-point"><strong>·</strong></span>
+                                    <span class="bullet-text">{{ bullet }}</span>
+                                </div>
+                            {% endfor %}
+                        </p>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endmacro %}
