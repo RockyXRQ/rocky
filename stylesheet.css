@@ -87,12 +87,12 @@ a.link:hover {
     text-align: center;
 }
 
-.moments-moment {
+.moments-post {
     vertical-align: middle;
     text-align: left;
 }
 
-.moments-moment-ellipsis {
+.moments-post-ellipsis {
     padding-top: 10px;
     vertical-align: middle;
     text-align: center;
@@ -205,4 +205,9 @@ a.link:hover {
     100% {
         transform: rotate(0deg);
     }
+}
+
+.moments-post-date {
+    display: inline-block;
+    width: 95px;
 }

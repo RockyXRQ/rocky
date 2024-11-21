@@ -39,11 +39,13 @@
         <tbody>
             {% for post in posts %}
                 <tr>
-                    <td class="moments-moment">[{{ post.date }}]&emsp;{{ post.description }}</td>
+                    <td class="moments-post">
+                        <span class="moments-post-date">{{ post.date }}</span>&emsp;{{ post.description }}
+                    </td>
                 </tr>
             {% endfor %}
             <tr>
-                <td class="moments-moment-ellipsis">···</td>
+                <td class="moments-post-ellipsis">···</td>
             </tr>
         </tbody>
     </table>
