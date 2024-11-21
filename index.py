@@ -197,6 +197,7 @@ galleries = [
                     Tag(name="CAN", color="yellow"),
                 ],
                 links=[
+                    "2021.7 - Now",
                     link(
                         "Next Innovation STEM Center",
                         "https://github.com/FRCNextInnovation",
@@ -205,7 +206,6 @@ galleries = [
                         "Github Repo & Doc",
                         "https://github.com/FRCNextInnovation/NI-Skeleton",
                     ),
-                    "2021.7 - Now",
                 ],
                 description="High-performance FRC software framework",
                 bullets=[
@@ -225,9 +225,9 @@ galleries = [
                     Tag(name="ROS", color="lightgrey"),
                 ],
                 links=[
+                    "2019.9 - 2021.5",
                     link("RoboVigor", "https://github.com/RoboVigor"),
                     link("Github Repo", "https://github.com/RoboVigor/RV-CornerStone"),
-                    "2019.9 - 2021.5",
                 ],
                 description="STM32-based RoboMaster robot framework",
                 bullets=[
@@ -246,13 +246,13 @@ galleries = [
                     award(
                         "Selected work of 2021 International Red Dot Concept Design Award"
                     ),
+                    "2021.5",
                     "Chonglang Yuan, Zhirui Zhang, Rocky Xu",
                     link(
                         "Github Repo & Doc",
                         "https://github.com/RockyXRQ/DBMAL-Seeeduino",
                     ),
                     link("Video", "https://www.bilibili.com/video/BV1eV4y1g7af"),
-                    "2021.5",
                 ],
                 description="Smart ambient lighting system with audio reactivity",
                 bullets=[
