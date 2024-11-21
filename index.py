@@ -1,4 +1,4 @@
-from item import Head, Bio, link, Moment, Item, Gallery, Tag, award
+from item import Head, Bio, link, Post, Item, Gallery, Tag, award, Moments
 
 head = Head(
     title="Rocky Xu",
@@ -7,6 +7,8 @@ head = Head(
 )
 
 bio = Bio(
+    title="Hello, and welcome!",
+    image="assets/me.png",
     paragraphs=[
         f"I'm Rocky Xu, a robot engineer 🤖, {link('FIRST','https://www.firstinspires.org/robotics/frc')} alumni 🎓 and FRC programming mentor in team {link('8214 Cyber Unicorn', 'https://www.thebluealliance.com/team/8214')} 🦄",
     ],
@@ -18,20 +20,23 @@ bio = Bio(
     ],
 )
 
-moments = [
-    Moment(
-        date="2024.03.20",
-        description="Champion and industrial design award of FRC 2024 Haliç Regional",
-    ),
-    Moment(
-        date="2023.08.06",
-        description="Champion and creative award of FRC 2023 China Off-season",
-    ),
-    Moment(
-        date="2023.04.02",
-        description="Industrial design award of FRC 2023 Smoky Mountain Regional",
-    ),
-]
+moments = Moments(
+    title="🎉 Moments",
+    posts=[
+        Post(
+            date="2024.03.20",
+            description="Champion and industrial design award of FRC 2024 Haliç Regional",
+        ),
+        Post(
+            date="2023.08.06",
+            description="Champion and creative award of FRC 2023 China Off-season",
+        ),
+        Post(
+            date="2023.04.02",
+            description="Industrial design award of FRC 2023 Smoky Mountain Regional",
+        ),
+    ],
+)
 
 galleries = [
     Gallery(

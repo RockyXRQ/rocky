@@ -19,14 +19,22 @@ class Head:
 
 @dataclass(frozen=True)
 class Bio:
+    title: str
+    image: str
     paragraphs: list[str]
     contacts: list[str]
 
 
 @dataclass(frozen=True)
-class Moment:
+class Post:
     date: str
     description: str
+
+
+@dataclass(frozen=True)
+class Moments:
+    title: str
+    posts: list[Post]
 
 
 @dataclass(frozen=True)

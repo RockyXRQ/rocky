@@ -1,17 +1,13 @@
-{% macro BIO(paragraphs, contacts) %}
+{% macro BIO(title, image, paragraphs, contacts) %}
     <table class="bio">
         <tbody>
             <tr>
                 <td class="bio-image">
-                    <img class="bio-image"
-                         alt="bio"
-                         src="assets/me.png"
-                         width="100%"
-                         height="100%" />
+                    <img class="bio-image" alt="bio" src={{ image }} width="100%" height="100%" />
                 </td>
                 <td class="bio-text">
                     <p class="bio-name">
-                        <span class="waving-hand">👋🏻</span> Hello, and welcome!
+                        <span class="waving-hand">👋🏻</span> {{ title }}
                     </p>
                     {% for paragraph in paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
                 </td>
@@ -31,19 +27,19 @@
         </tbody>
     </table>
 {% endmacro %}
-{% macro MOMENTS(moments) %}
+{% macro MOMENTS(title, posts) %}
     <table class="section-title">
         <tbody>
             <tr>
-                <td class="section-title">🎉 Moments</td>
+                <td class="section-title">{{ title }}</td>
             </tr>
         </tbody>
     </table>
     <table class="section-content">
         <tbody>
-            {% for moment in moments %}
+            {% for post in posts %}
                 <tr>
-                    <td class="moments-moment">[{{ moment.date }}]&emsp;{{ moment.description }}</td>
+                    <td class="moments-moment">[{{ post.date }}]&emsp;{{ post.description }}</td>
                 </tr>
             {% endfor %}
             <tr>
@@ -64,6 +60,7 @@
         <tbody>
             {% for item in items %}
                 <tr class="gallery-item">
+                    <td></td>
                     <td class="gallery-item-image">
                         <div>
                             <img src={{ item.image }} width="100%" height="100%" alt="{{ item.name }}" />
