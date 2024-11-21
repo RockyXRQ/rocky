@@ -76,18 +76,22 @@
                             {% endfor %}
                         {% endif %}
                         <br />
-                        {% for link in item.links %}
-                            {{ link }}
-                            <br />
-                        {% endfor %}
+                        {% if item.links is defined and item.links %}
+                            {% for link in item.links %}
+                                {{ link }}
+                                <br />
+                            {% endfor %}
+                        {% endif %}
                         {{ item.description }}
                         <p class="bullet-list">
-                            {% for bullet in item.bullets %}
-                                <div class="bullet-item">
-                                    <span class="bullet-point"><strong>·</strong></span>
-                                    <span class="bullet-text">{{ bullet }}</span>
-                                </div>
-                            {% endfor %}
+                            {% if item.bullets is defined and item.bullets %}
+                                {% for bullet in item.bullets %}
+                                    <div class="bullet-item">
+                                        <span class="bullet-point"><strong>·</strong></span>
+                                        <span class="bullet-text">{{ bullet }}</span>
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
                         </p>
                     </td>
                 </tr>
