@@ -15,7 +15,7 @@ try:
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
     china_timezone = timezone(timedelta(hours=8))
     current_time = datetime.now(china_timezone).strftime("%Y-%m-%d %H:%M:%S")
-    print(f"⏰ Build Time: {current_time}\n")
+    print(f"⏰ Build Start Time: {current_time}\n")
 
     print(f"📂 Template Directory: {TEMPLATE_DIR}")
     print(f"📄 Template File: {INDEX_TEMPLATE_FILE_NAME}")

@@ -16,7 +16,7 @@ bio = Bio(
         link("Email", "mailto:rockyxrq@gmail.com"),
         link("Instagram", "https://www.instagram.com/rocky_xrq/"),
         link("Github", "https://github.com/RockyXRQ"),
-        link("@Cheryl", "https://www.cheryl-slj.com"),
+        link("@Cheryl 💕", "https://www.cheryl-slj.com"),
     ],
 )
 
