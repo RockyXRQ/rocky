@@ -3,7 +3,7 @@ from item import Head, Bio, link, Post, Item, Gallery, Tag, award, Moments
 head = Head(
     title="Rocky Xu",
     description="Rocky Xu's academic website",
-    keywords="Rocky Xu, academic website, personal website",
+    keywords="Rocky Xu, Ruoqi Xu, Rocky, academic website, personal website",
 )
 
 bio = Bio(
@@ -29,7 +29,7 @@ moments = Moments(
         ),
         Post(
             date="2023.08.06",
-            description="Champion and creative award of FRC 2023 China Off-season",
+            description="Champion and industrial design award of FRC 2023 China Off-season",
         ),
         Post(
             date="2023.04.02",
@@ -62,7 +62,7 @@ galleries = [
                 description="Robotics & Embedded Systems Engineer",
                 bullets=[
                     "Developed core programming framework",
-                    "Created technical documentation",
+                    "Built documentation system",
                     "Supported robot design and development",
                 ],
             ),
@@ -87,7 +87,7 @@ galleries = [
                 bullets=[
                     "Lead programming for 5 competition robots",
                     "Developed student programming curriculum",
-                    "Created team software architecture",
+                    "Built core software architecture",
                 ],
             ),
             Item(
@@ -97,7 +97,7 @@ galleries = [
                 links=["2018.6 - 2018.8"],
                 description="Embedded System Intern",
                 bullets=[
-                    "Build the programming framework",
+                    "Developed programming framework",
                 ],
             ),
         ],
@@ -131,7 +131,7 @@ galleries = [
                     "Multi-camera vision system",
                     "Custom trajectory generation with Choreo",
                     "PD-based trajectory tracking",
-                    "State machine-based control system",
+                    "State-machine based control system",
                 ],
             ),
             Item(
@@ -156,7 +156,7 @@ galleries = [
                 description="Competition robot for FRC 2023 - Game piece manipulation",
                 bullets=[
                     "UKF-based sensor fusion odometry",
-                    "AprilTag-based auto-targeting system",
+                    "AprilTag-based auto-aiming system",
                     "Hermite spline trajectory generation",
                     "Adaptive Pure Pursuit control",
                     "Model-based joint control with gravity compensation",
@@ -179,17 +179,17 @@ galleries = [
                         "https://github.com/FRCNextInnovation",
                     ),
                     link(
-                        "Robot Code",
+                        "Code",
                         "https://github.com/FRCNextInnovation/NI-8214-2022-Public",
                     ),
                 ],
                 description="Competition robot for FRC 2022 - Ball collection and scoring",
                 bullets=[
                     "Multi-sensor fusion odometry (IMU, WO, VO)",
-                    "Vision-based auto-targeting",
-                    "Hermite spline path planning",
+                    "Vision-based auto-aiming",
+                    "Hermite spline trajectory generation",
                     "Pure Pursuit trajectory following",
-                    "Vision-assisted velocity feedforward",
+                    "Vision-assisted velocity feedforward aiming control",
                 ],
             ),
             Item(
@@ -208,16 +208,11 @@ galleries = [
                         "https://github.com/FRCNextInnovation",
                     ),
                     link(
-                        "Github Repo & Doc",
+                        "Code",
                         "https://github.com/FRCNextInnovation/NI-Skeleton",
                     ),
                 ],
                 description="High-performance FRC software framework",
-                bullets=[
-                    "Custom control and driver libraries",
-                    "Enhanced WPILIB performance",
-                    "Standardized development templates",
-                ],
             ),
             Item(
                 image="assets/cornerstone.jpg",
@@ -232,11 +227,10 @@ galleries = [
                 links=[
                     "2019.9 - 2021.5",
                     link("RoboVigor", "https://github.com/RoboVigor"),
-                    link("Github Repo", "https://github.com/RoboVigor/RV-CornerStone"),
+                    link("Code", "https://github.com/RoboVigor/RV-CornerStone"),
                 ],
                 description="STM32-based RoboMaster robot framework",
                 bullets=[
-                    "Industry-standard practices",
                     "Modular robot configuration system",
                 ],
             ),
@@ -254,16 +248,12 @@ galleries = [
                     "2021.5",
                     "Chonglang Yuan, Zhirui Zhang, Rocky Xu",
                     link(
-                        "Github Repo & Doc",
+                        "Code",
                         "https://github.com/RockyXRQ/DBMAL-Seeeduino",
                     ),
                     link("Video", "https://www.bilibili.com/video/BV1eV4y1g7af"),
                 ],
                 description="Smart ambient lighting system with audio reactivity",
-                bullets=[
-                    "HSL-based lighting algorithms",
-                    "Touch-controlled mode switching",
-                ],
             ),
         ],
     ),
