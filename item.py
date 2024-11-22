@@ -41,6 +41,7 @@ class Moments:
 class Tag:
     name: str
     color: str
+    logo: str = None
 
 
 @dataclass(frozen=True)

@@ -38,6 +38,13 @@ moments = Moments(
     ],
 )
 
+_FRC_TAG = Tag(name="FRC", color="0066B3", logo="first")
+_OPENCV_TAG = Tag(name="OpenCV", color="5C3EE8", logo="opencv")
+_JAVA_TAG = Tag(name="Java", color="000000", logo="openjdk")
+_STM32_TAG = Tag(name="STM32", color="03234B", logo="stmicroelectronics")
+_CPP_TAG = Tag(name="C/C++", color="00599C", logo="cplusplus")
+_ARDUINO_TAG = Tag(name="Arduino", color="00878F", logo="arduino")
+
 galleries = [
     Gallery(
         name="👔 Employment",
@@ -109,10 +116,9 @@ galleries = [
                 image="assets/frc_2024_8214.jpg",
                 name="FRC 2024 Robot - XiaoBa (Team 8214)",
                 tags=[
-                    Tag(name="Robotics", color="brightgreen"),
-                    Tag(name="Java", color="orange"),
-                    Tag(name="OpenCV", color="blue"),
-                    Tag(name="Control", color="lightgrey"),
+                    _FRC_TAG,
+                    _OPENCV_TAG,
+                    _JAVA_TAG,
                 ],
                 links=[
                     award("FRC 2024 Haliç Regional Champion"),
@@ -138,10 +144,9 @@ galleries = [
                 image="assets/frc_2023_8214.jpg",
                 name="FRC 2023 Robot - Vasey (Team 8214)",
                 tags=[
-                    Tag(name="Robotics", color="brightgreen"),
-                    Tag(name="Java", color="orange"),
-                    Tag(name="OpenCV", color="blue"),
-                    Tag(name="Control", color="lightgrey"),
+                    _FRC_TAG,
+                    _OPENCV_TAG,
+                    _JAVA_TAG,
                 ],
                 links=[
                     "2023.*",
@@ -166,10 +171,9 @@ galleries = [
                 image="assets/frc_2022_8214.jpg",
                 name="FRC 2022 Robot (Team 8583 & 8214)",
                 tags=[
-                    Tag(name="Robotics", color="brightgreen"),
-                    Tag(name="Java", color="orange"),
-                    Tag(name="OpenCV", color="blue"),
-                    Tag(name="Control", color="lightgrey"),
+                    _FRC_TAG,
+                    _OPENCV_TAG,
+                    _JAVA_TAG,
                 ],
                 links=[
                     award("FRC 2023 China Off-season Champion"),
@@ -196,10 +200,8 @@ galleries = [
                 image="assets/ni_skeleton.png",
                 name="NI Skeleton",
                 tags=[
-                    Tag(name="System", color="blue"),
-                    Tag(name="Robotics", color="brightgreen"),
-                    Tag(name="Java", color="orange"),
-                    Tag(name="CAN", color="yellow"),
+                    _FRC_TAG,
+                    _JAVA_TAG,
                 ],
                 links=[
                     "2021.7 - Now",
@@ -218,11 +220,8 @@ galleries = [
                 image="assets/cornerstone.jpg",
                 name="RV CornerStone",
                 tags=[
-                    Tag(name="System", color="blue"),
-                    Tag(name="Robotics", color="brightgreen"),
-                    Tag(name="STM32", color="grey"),
-                    Tag(name="C/C++", color="yellow"),
-                    Tag(name="ROS", color="lightgrey"),
+                    _STM32_TAG,
+                    _CPP_TAG,
                 ],
                 links=[
                     "2019.9 - 2021.5",
@@ -238,8 +237,8 @@ galleries = [
                 image="assets/dbmal.jpg",
                 name="DBMAL",
                 tags=[
-                    Tag(name="Arduino", color="blue"),
-                    Tag(name="C/C++", color="yellow"),
+                    _ARDUINO_TAG,
+                    _CPP_TAG,
                 ],
                 links=[
                     award(

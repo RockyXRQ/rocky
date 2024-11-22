@@ -77,7 +77,7 @@
                         <br />
                         {% if item.tags is defined and item.tags %}
                             {% for tag in item.tags %}
-                                <img src=" https://img.shields.io/badge/-{{ tag.name }}-{{ tag.color }}"
+                                <img src=" https://img.shields.io/badge/-{{ tag.name }}-{{ tag.color }}{% if tag.logo %}?logo={{ tag.logo }}&logoColor=white{% endif %}"
                                      alt="{{ tag.name }}" />
                             {% endfor %}
                             <br />
