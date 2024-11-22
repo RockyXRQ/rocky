@@ -241,9 +241,7 @@ galleries = [
                     _CPP_TAG,
                 ],
                 links=[
-                    award(
-                        "Selected work of 2021 International Red Dot Concept Design Award"
-                    ),
+                    award("Selected work of 2021 International Red Dot Award"),
                     "2021.5",
                     "Chonglang Yuan, Zhirui Zhang, Rocky Xu",
                     link(
