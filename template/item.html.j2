@@ -14,18 +14,20 @@
             </tr>
         </tbody>
     </table>
-    <table class="bio">
-        <tbody>
-            <tr>
-                <td class="bio-contacts">
-                    {% for contact in contacts %}
-                        {{ contact }}
-                        {% if not loop.last %}&nbsp;/&nbsp;{% endif %}
-                    {% endfor %}
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    {% if contacts is defined and contacts %}
+        <table class="bio">
+            <tbody>
+                <tr>
+                    <td class="bio-contacts">
+                        {% for contact in contacts %}
+                            {{ contact }}
+                            {% if not loop.last %}&nbsp;/&nbsp;{% endif %}
+                        {% endfor %}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    {% endif %}
 {% endmacro %}
 {% macro MOMENTS(title, posts) %}
     <table class="section-title">
@@ -37,13 +39,15 @@
     </table>
     <table class="section-content">
         <tbody>
-            {% for post in posts %}
-                <tr>
-                    <td class="moments-post">
-                        <span class="moments-post-date">{{ post.date }}</span>&emsp;{{ post.description }}
-                    </td>
-                </tr>
-            {% endfor %}
+            {% if posts is defined and posts %}
+                {% for post in posts %}
+                    <tr>
+                        <td class="moments-post">
+                            <span class="moments-post-date">{{ post.date }}</span>{{ post.description }}
+                        </td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
             <tr>
                 <td class="moments-post-ellipsis">···</td>
             </tr>
@@ -76,8 +80,8 @@
                                 <img src=" https://img.shields.io/badge/-{{ tag.name }}-{{ tag.color }}"
                                      alt="{{ tag.name }}" />
                             {% endfor %}
+                            <br />
                         {% endif %}
-                        <br />
                         {% if item.links is defined and item.links %}
                             {% for link in item.links %}
                                 {{ link }}
