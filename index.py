@@ -113,6 +113,31 @@ galleries = [
         name="✨ Project",
         items=[
             Item(
+                image="assets/frc_2025_8214.jpg",
+                name="FRC 2025 Robot - Quaso (Team 8214)",
+                tags=[
+                    _FRC_TAG,
+                    _OPENCV_TAG,
+                    _JAVA_TAG,
+                ],
+                links=[
+                    award("FRC 2025 Houston Championship Division Finalist"),
+                    award("FRC 2025 Houston Championship Industrial Design Award"),
+                    "2025.*",
+                    link(
+                        "Next Innovation STEM Center",
+                        "https://github.com/FRCNextInnovation",
+                    ),
+                ],
+                description="Competition robot for FRC 2025 - Pipe and ball collection and placement",
+                bullets=[
+                    "KF-based visual-inertial odometry",
+                    "Multi-camera vision system",
+                    "OTF path generation with shifted pose",
+                    "Full state logging powered by Advantage Kit and Advantage Scope",
+                ],
+            ),
+            Item(
                 image="assets/frc_2024_8214.jpg",
                 name="FRC 2024 Robot - XiaoBa (Team 8214)",
                 tags=[
