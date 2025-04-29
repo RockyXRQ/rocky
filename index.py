@@ -24,16 +24,16 @@ moments = Moments(
     title="🎉 Moments",
     posts=[
         Post(
-            date="2024.03.20",
-            description="Champion and industrial design award of FRC 2024 Haliç Regional",
+            date="2025.04.19",
+            description="Division finalist and industrial design award of FRC 2025 Houston Championship",
         ),
         Post(
-            date="2023.08.06",
-            description="Champion and industrial design award of FRC 2023 China Off-season",
+            date="2025.03.16",
+            description="Industrial design award of FRC 2025 Shanghai Regional",
         ),
         Post(
-            date="2023.04.02",
-            description="Industrial design award of FRC 2023 Smoky Mountain Regional",
+            date="2025.03.06",
+            description="Autonomous award of FRC 2025 İstanbul Regional",
         ),
     ],
 )
