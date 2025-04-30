@@ -10,7 +10,7 @@ bio = Bio(
     title="Hello, and welcome!",
     image="assets/me.png",
     paragraphs=[
-        f"I'm Rocky Xu, a robot engineer 🤖, {link('FIRST','https://www.firstinspires.org/robotics/frc')} alumni 🎓 and FRC programming mentor in team {link('8214 Cyber Unicorn', 'https://www.thebluealliance.com/team/8214')} 🦄",
+        f"I'm Rocky Xu, a robot engineer 🤖, {link('FIRST', 'https://www.firstinspires.org/robotics/frc')} alumni 🎓 and FRC programming mentor in team {link('8214 Cyber Unicorn', 'https://www.thebluealliance.com/team/8214')} 🦄",
     ],
     contacts=[
         link("Email", "mailto:rockyxrq@gmail.com"),
@@ -166,7 +166,7 @@ galleries = [
                 ],
             ),
             Item(
-                image="assets/frc_2023_8214.jpg",
+                image="assets/frc_2023_8214.png",
                 name="FRC 2023 Robot - Vasey (Team 8214)",
                 tags=[
                     _FRC_TAG,
@@ -193,7 +193,7 @@ galleries = [
                 ],
             ),
             Item(
-                image="assets/frc_2022_8214.jpg",
+                image="assets/frc_2022_8214.png",
                 name="FRC 2022 Robot (Team 8583 & 8214)",
                 tags=[
                     _FRC_TAG,
@@ -222,27 +222,7 @@ galleries = [
                 ],
             ),
             Item(
-                image="assets/ni_skeleton.png",
-                name="NI Skeleton",
-                tags=[
-                    _FRC_TAG,
-                    _JAVA_TAG,
-                ],
-                links=[
-                    "2021.7 - Now",
-                    link(
-                        "Next Innovation STEM Center",
-                        "https://github.com/FRCNextInnovation",
-                    ),
-                    link(
-                        "Code",
-                        "https://github.com/FRCNextInnovation/NI-Skeleton",
-                    ),
-                ],
-                description="High-performance FRC software framework",
-            ),
-            Item(
-                image="assets/cornerstone.jpg",
+                image="assets/cornerstone.png",
                 name="RV CornerStone",
                 tags=[
                     _STM32_TAG,
