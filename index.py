@@ -24,6 +24,10 @@ moments = Moments(
     title="🎉 Moments",
     posts=[
         Post(
+            date="2025.07.22",
+            description="Champion of FRC 2025 China off-season ",
+        ),
+        Post(
             date="2025.04.19",
             description="Division finalist and industrial design award of FRC 2025 Houston Championship",
         ),
@@ -114,15 +118,15 @@ galleries = [
         items=[
             Item(
                 image="assets/frc_2025_8214.jpg",
-                name="FRC 2025 Robot - Quaso (Team 8214)",
+                name="FRC 2025 Robot - MANTOU (Team 8214)",
                 tags=[
                     _FRC_TAG,
                     _OPENCV_TAG,
                     _JAVA_TAG,
                 ],
                 links=[
+                    award("FRC 2025 China Off-season Champion"),
                     award("FRC 2025 Houston Championship Division Finalist"),
-                    award("FRC 2025 Houston Championship Industrial Design Award"),
                     "2025.*",
                     link(
                         "Next Innovation STEM Center",
