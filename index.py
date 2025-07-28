@@ -25,7 +25,7 @@ moments = Moments(
     posts=[
         Post(
             date="2025.07.22",
-            description="Champion of FRC 2025 China off-season ",
+            description="Champion and autonomous award of FRC 2025 China off-season ",
         ),
         Post(
             date="2025.04.19",
