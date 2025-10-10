@@ -54,10 +54,18 @@ galleries = [
         name="👔 Employment",
         items=[
             Item(
+                image="assets/next_innovation.png",
+                name="Next Innovation",
+                tags=[Tag(name="Startup", color="red")],
+                links=["2021.6 - now"],
+                description="CTO",
+                bullets=[],
+            ),
+            Item(
                 image="assets/cartesius.png",
                 name="Cartesius Robotics",
                 tags=[Tag(name="Startup", color="red")],
-                links=["2023.5 - now"],
+                links=["2023.5 - 2025.10"],
                 description="Software Architect",
                 bullets=[
                     "Designed and implemented core system architecture",
@@ -69,7 +77,7 @@ galleries = [
                 image="assets/hkclr.png",
                 name="HKCLR",
                 tags=[Tag(name="CUHK", color="yellow")],
-                links=["2023.5 - now"],
+                links=["2023.5 - 2025.10"],
                 description="Robotics & Embedded Systems Engineer",
                 bullets=[
                     "Developed core programming framework",
@@ -87,18 +95,6 @@ galleries = [
                     "Automated division workflow processes",
                     "Maintained corporate website",
                     "Obtained Mendix Rapid Developer Certification",
-                ],
-            ),
-            Item(
-                image="assets/next_innovation.png",
-                name="Next Innovation",
-                tags=[Tag(name="Startup", color="red")],
-                links=["2021.6 - now"],
-                description="Programming Mentor",
-                bullets=[
-                    "Lead programming for 5 competition robots",
-                    "Developed student programming curriculum",
-                    "Built core software architecture",
                 ],
             ),
             Item(
