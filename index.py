@@ -62,18 +62,6 @@ galleries = [
                 bullets=[],
             ),
             Item(
-                image="assets/cartesius.png",
-                name="Cartesius Robotics",
-                tags=[Tag(name="Startup", color="red")],
-                links=["2023.5 - 2025.10"],
-                description="Software Architect",
-                bullets=[
-                    "Designed and implemented core system architecture",
-                    "Established documentation system and agile development workflow",
-                    "Lead product definition and planning",
-                ],
-            ),
-            Item(
                 image="assets/hkclr.png",
                 name="HKCLR",
                 tags=[Tag(name="CUHK", color="yellow")],
@@ -106,6 +94,7 @@ galleries = [
                 bullets=[
                     "Developed programming framework",
                 ],
+                want_negative_film_in_dark_mode=True,
             ),
         ],
     ),
@@ -237,6 +226,7 @@ galleries = [
                 bullets=[
                     "Modular robot configuration system",
                 ],
+                want_negative_film_in_dark_mode=True,
             ),
             Item(
                 image="assets/dbmal.jpg",

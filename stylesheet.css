@@ -211,3 +211,7 @@ a.link:hover {
     display: inline-block;
     width: 118px;
 }
+
+:root[data-theme="dark"] .invert-in-dark {
+    filter: invert(1);
+}

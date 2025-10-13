@@ -52,6 +52,7 @@ class Item:
     links: list[str] = None
     description: str = ""
     bullets: list[str] = None
+    want_negative_film_in_dark_mode: bool = False
 
 
 @dataclass(frozen=True)
