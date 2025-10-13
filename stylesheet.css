@@ -212,6 +212,10 @@ a.link:hover {
     width: 118px;
 }
 
+.invert-in-dark {
+    transition: filter 0.3s;
+}
+
 :root[data-theme="dark"] .invert-in-dark {
     filter: invert(1);
 }
