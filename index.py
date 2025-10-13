@@ -43,6 +43,7 @@ moments = Moments(
 )
 
 _FRC_TAG = Tag(name="FRC", color="0066B3", logo="first")
+_FIRST_TAG = Tag(name="FIRST", color="0066B3", logo="first")
 _OPENCV_TAG = Tag(name="OpenCV", color="5C3EE8", logo="opencv")
 _JAVA_TAG = Tag(name="Java", color="000000", logo="openjdk")
 _STM32_TAG = Tag(name="STM32", color="03234B", logo="stmicroelectronics")
@@ -54,10 +55,21 @@ galleries = [
         name="👔 Employment",
         items=[
             Item(
-                image="assets/next_innovation.png",
+                image="assets/ni.svg",
                 name="Next Innovation",
-                tags=[Tag(name="Startup", color="red")],
-                links=["2021.6 - now"],
+                tags=[_FIRST_TAG, Tag(name="Education", color="green")],
+                links=[
+                    "2021.6 - now",
+                    link("Email", "mailto:contact@nirobotics.net"),
+                    link(
+                        "Instagram",
+                        "https://www.instagram.com/cyberunicorn8214",
+                    ),
+                    link(
+                        "GitHub",
+                        "https://github.com/FRCNextInnovation",
+                    ),
+                ],
                 description="CTO",
                 bullets=[],
             ),
