@@ -60,7 +60,7 @@ galleries = [
                 tags=[_FIRST_TAG, Tag(name="Education", color="green")],
                 links=[
                     "2021.6 - now",
-                    link("Email", "mailto:contact@nirobotics.net"),
+                    link("Email", "mailto:contact@nirobotics.email"),
                     link(
                         "Instagram",
                         "https://www.instagram.com/cyberunicorn8214",
