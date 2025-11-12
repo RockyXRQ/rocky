@@ -56,7 +56,7 @@ galleries = [
         items=[
             Item(
                 image="assets/ni.svg",
-                name="Next Innovation",
+                name="NI Robotics",
                 tags=[_FIRST_TAG, Tag(name="Education", color="green")],
                 links=[
                     "2021.6 - now",
@@ -67,7 +67,7 @@ galleries = [
                     ),
                     link(
                         "GitHub",
-                        "https://github.com/FRCNextInnovation",
+                        "https://github.com/nirobotics",
                     ),
                 ],
                 description="CTO",
@@ -126,8 +126,8 @@ galleries = [
                     award("FRC 2025 Houston Championship Division Finalist"),
                     "2025.*",
                     link(
-                        "Next Innovation STEM Center",
-                        "https://github.com/FRCNextInnovation",
+                        "NI Robotics STEM Center",
+                        "https://github.com/nirobotics",
                     ),
                 ],
                 description="Competition robot for FRC 2025 - Pipe and ball collection and placement",
@@ -150,8 +150,8 @@ galleries = [
                     award("FRC 2024 Haliç Regional Champion"),
                     "2024.*",
                     link(
-                        "Next Innovation STEM Center",
-                        "https://github.com/FRCNextInnovation",
+                        "NI Robotics STEM Center",
+                        "https://github.com/nirobotics",
                     ),
                     link(
                         "Robot Teaser", "https://www.bilibili.com/video/BV18u4m1A7F3/"
@@ -177,8 +177,8 @@ galleries = [
                 links=[
                     "2023.*",
                     link(
-                        "Next Innovation STEM Center",
-                        "https://github.com/FRCNextInnovation",
+                        "NI Robotics STEM Center",
+                        "https://github.com/nirobotics",
                     ),
                     link(
                         "Robot Reveal", "https://www.bilibili.com/video/BV1so4y1q7DG/"
@@ -205,12 +205,12 @@ galleries = [
                     award("FRC 2023 China Off-season Champion"),
                     "2022.*",
                     link(
-                        "Next Innovation STEM Center",
-                        "https://github.com/FRCNextInnovation",
+                        "NI Robotics STEM Center",
+                        "https://github.com/nirobotics",
                     ),
                     link(
                         "Code",
-                        "https://github.com/FRCNextInnovation/NI-8214-2022-Public",
+                        "https://github.com/nirobotics/NI-8214-2022-Public",
                     ),
                 ],
                 description="Competition robot for FRC 2022 - Ball collection and scoring",
