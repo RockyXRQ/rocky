@@ -55,6 +55,21 @@ galleries = [
         name="👔 Employment",
         items=[
             Item(
+                image="assets/nice.png",
+                name="NICE Robotics",
+                tags=[_FIRST_TAG, Tag(name="Production", color="orange")],
+                links=[
+                    "2025.10 - now",
+                    link("Email", "mailto:contact@nicerobotics.hk"),
+                    link(
+                        "GitHub",
+                        "https://github.com/nicerobotics",
+                    ),
+                ],
+                description="CEO",
+                bullets=[],
+            ),
+            Item(
                 image="assets/ni.svg",
                 name="NI Robotics",
                 tags=[_FIRST_TAG, Tag(name="Education", color="green")],
