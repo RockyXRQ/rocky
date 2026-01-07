@@ -24,20 +24,16 @@ moments = Moments(
     title="🎉 Moments",
     posts=[
         Post(
+            date="2025.10.23",
+            description="Became CEO of NICE Robotics",
+        ),
+        Post(
             date="2025.07.22",
-            description="Champion and autonomous award of FRC 2025 China off-season ",
+            description="Champion and autonomous award of FRC 2025 China off-season",
         ),
         Post(
             date="2025.04.19",
             description="Division finalist and industrial design award of FRC 2025 Houston Championship",
-        ),
-        Post(
-            date="2025.03.16",
-            description="Industrial design award of FRC 2025 Shanghai Regional",
-        ),
-        Post(
-            date="2025.03.06",
-            description="Autonomous award of FRC 2025 İstanbul Regional",
         ),
     ],
 )
