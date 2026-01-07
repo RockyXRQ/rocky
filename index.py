@@ -1,4 +1,4 @@
-from item import Head, Bio, link, Post, Item, Gallery, Tag, award, Moments
+from item import Bio, Gallery, Head, Item, Moments, Post, Tag, award, link
 
 head = Head(
     title="Rocky Xu",
@@ -60,11 +60,19 @@ galleries = [
                 tags=[_FIRST_TAG, Tag(name="Production", color="orange")],
                 links=[
                     "2025.10 - now",
-                    link("Email", "mailto:contact@nicerobotics.hk"),
+                    link(
+                        "Taobao",
+                        "https://shop208167792.taobao.com/?spm=pc_detail.30350276.shop_block.dshopinfo.55d87dd6R711Qf",
+                    ),
+                    link(
+                        "Doc",
+                        "https://docs.nicerobotics.hk/",
+                    ),
                     link(
                         "GitHub",
                         "https://github.com/nicerobotics",
                     ),
+                    link("Email", "mailto:contact@nicerobotics.hk"),
                 ],
                 description="CEO",
                 bullets=[],
@@ -75,15 +83,15 @@ galleries = [
                 tags=[_FIRST_TAG, Tag(name="Education", color="green")],
                 links=[
                     "2021.6 - now",
-                    link("Email", "mailto:contact@nirobotics.email"),
-                    link(
-                        "Instagram",
-                        "https://www.instagram.com/cyberunicorn8214",
-                    ),
                     link(
                         "GitHub",
                         "https://github.com/nirobotics",
                     ),
+                    link(
+                        "Instagram",
+                        "https://www.instagram.com/cyberunicorn8214",
+                    ),
+                    link("Email", "mailto:contact@nirobotics.email"),
                 ],
                 description="CTO",
                 bullets=[],
