@@ -24,16 +24,16 @@ moments = Moments(
     title="🎉 Moments",
     posts=[
         Post(
+            date="2026.05.03",
+            description="Innovation in Control award of FRC 2026 Houston Championship",
+        ),
+        Post(
+            date="2026.03.15",
+            description="Champion of FRC 2026 Shanghai regional",
+        ),
+        Post(
             date="2025.10.23",
             description="Became CEO of NICE Robotics",
-        ),
-        Post(
-            date="2025.07.22",
-            description="Champion and autonomous award of FRC 2025 China off-season",
-        ),
-        Post(
-            date="2025.04.19",
-            description="Division finalist and industrial design award of FRC 2025 Houston Championship",
         ),
     ],
 )
@@ -132,6 +132,32 @@ galleries = [
     Gallery(
         name="✨ Project",
         items=[
+            Item(
+                image="assets/frc_2026_8214.jpg",
+                name="FRC 2026 Robot - THRUPUT (Team 8214)",
+                tags=[
+                    _FRC_TAG,
+                    _OPENCV_TAG,
+                    _JAVA_TAG,
+                ],
+                links=[
+                    award("FRC 2026 Shanghai Regional Champion"),
+                    award("FRC 2026 Houston Championship Innovation in Control Award"),
+                    award("FRC 2026 Statbotics World #51, China #1"),
+                    "2026.*",
+                    link(
+                        "NI Robotics STEM Center",
+                        "https://github.com/nirobotics",
+                    ),
+                ],
+                description="Competition robot for FRC 2026 - High volume balls shooting",
+                bullets=[
+                    "KF-based visual-inertial odometry",
+                    "Custom multi-camera vision system - Acapella",
+                    "Recoverable trajectory following during auto",
+                    "Full state logging powered by Advantage Kit and Advantage Scope",
+                ],
+            ),
             Item(
                 image="assets/frc_2025_8214.jpg",
                 name="FRC 2025 Robot - MANTOU (Team 8214)",
