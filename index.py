@@ -24,6 +24,10 @@ moments = Moments(
     title="🎉 Moments",
     posts=[
         Post(
+            date="2026.07.22",
+            description="Champion and Engineering Inspiration Award of FRC 2026 China Off-season",
+        ),
+        Post(
             date="2026.05.03",
             description="Innovation in Control award of FRC 2026 Houston Championship",
         ),
@@ -141,6 +145,8 @@ galleries = [
                     _JAVA_TAG,
                 ],
                 links=[
+                    award("FRC 2026 China Off-season Champion"),
+                    award("FRC 2026 China Off-season Engineering Inspiration Award"),
                     award("FRC 2026 Shanghai Regional Champion"),
                     award("FRC 2026 Houston Championship Innovation in Control Award"),
                     award("FRC 2026 Statbotics World #51, China #1"),
