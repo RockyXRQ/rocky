@@ -146,6 +146,7 @@ galleries = [
                 ],
                 links=[
                     award("FRC 2026 China Off-season Champion"),
+                    award("FRC 2026 China Off-season Undefeated (24-0-0)"),
                     award("FRC 2026 China Off-season Engineering Inspiration Award"),
                     award("FRC 2026 Shanghai Regional Champion"),
                     award("FRC 2026 Houston Championship Innovation in Control Award"),
