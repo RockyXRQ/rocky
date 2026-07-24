@@ -137,7 +137,7 @@ galleries = [
         items=[
             Item(
                 image="assets/frc_2026_8214.jpg",
-                name="FRC 2026 Robot - THRUPUT (Team 8214)",
+                name="FRC 2026 Robot - MACK (Team 8214)",
                 tags=[
                     _FRC_TAG,
                     _JAVA_TAG,
