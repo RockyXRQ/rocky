@@ -44,7 +44,6 @@ moments = Moments(
 
 _FRC_TAG = Tag(name="FRC", color="0066B3", logo="first")
 _FIRST_TAG = Tag(name="FIRST", color="0066B3", logo="first")
-_OPENCV_TAG = Tag(name="OpenCV", color="5C3EE8", logo="opencv")
 _JAVA_TAG = Tag(name="Java", color="000000", logo="openjdk")
 _STM32_TAG = Tag(name="STM32", color="03234B", logo="stmicroelectronics")
 _CPP_TAG = Tag(name="C/C++", color="00599C", logo="cplusplus")
@@ -141,7 +140,6 @@ galleries = [
                 name="FRC 2026 Robot - THRUPUT (Team 8214)",
                 tags=[
                     _FRC_TAG,
-                    _OPENCV_TAG,
                     _JAVA_TAG,
                 ],
                 links=[
@@ -170,7 +168,6 @@ galleries = [
                 name="FRC 2025 Robot - MANTOU (Team 8214)",
                 tags=[
                     _FRC_TAG,
-                    _OPENCV_TAG,
                     _JAVA_TAG,
                 ],
                 links=[
@@ -195,7 +192,6 @@ galleries = [
                 name="FRC 2024 Robot - XiaoBa (Team 8214)",
                 tags=[
                     _FRC_TAG,
-                    _OPENCV_TAG,
                     _JAVA_TAG,
                 ],
                 links=[
@@ -223,7 +219,6 @@ galleries = [
                 name="FRC 2023 Robot - Vasey (Team 8214)",
                 tags=[
                     _FRC_TAG,
-                    _OPENCV_TAG,
                     _JAVA_TAG,
                 ],
                 links=[
@@ -250,7 +245,6 @@ galleries = [
                 name="FRC 2022 Robot (Team 8583 & 8214)",
                 tags=[
                     _FRC_TAG,
-                    _OPENCV_TAG,
                     _JAVA_TAG,
                 ],
                 links=[
